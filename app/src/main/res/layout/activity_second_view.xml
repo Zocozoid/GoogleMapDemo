@@ -10,15 +10,14 @@
     <fragment
         android:id="@+id/map"
         android:name="com.google.android.gms.maps.SupportMapFragment"
-        android:layout_width="875dp"
-        android:layout_height="645dp"
+        android:layout_width="1014dp"
+        android:layout_height="802dp"
         app:layout_constrainedWidth="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/guideline"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.038" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <RadioButton
         android:id="@+id/radioButton"
@@ -79,11 +78,11 @@
         android:textAlignment="center"
         android:textColorLink="#0F31F0"
         app:layout_constraintBottom_toTopOf="@+id/button"
-        app:layout_constraintEnd_toStartOf="@+id/map"
-        app:layout_constraintHorizontal_bias="0.968"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/radioButton2"
-        app:layout_constraintVertical_bias="0.2" />
+        app:layout_constraintVertical_bias="0.117" />
 
     <Button
         android:id="@+id/button"
@@ -214,11 +213,12 @@
     </ScrollView>
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btn_close"
         android:layout_width="264dp"
         android:layout_height="40dp"
-        android:text="ЗАТВОРИ"
+        android:layout_marginBottom="3dp"
         android:background="#446AF5"
+        android:text="ЗАТВОРИ"
         android:textColor="#E91E1E"
         android:textSize="18sp"
         android:textStyle="bold"

@@ -60,12 +60,13 @@
         app:layout_constraintTop_toBottomOf="@+id/autoCompleteTextView5" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/listClients"
         android:layout_width="333dp"
         android:layout_height="75dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="28dp"
+        android:onClick="start"
         android:text="Прегледај клиенти"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -80,6 +81,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="28dp"
+        android:layout_marginBottom="32dp"
         android:text="ОДЈАВИ ПАТРОЛА"
         android:textColor="@android:color/holo_red_dark"
         android:textSize="26sp"
@@ -88,8 +90,7 @@
         app:layout_constraintEnd_toEndOf="@+id/divider2"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button3"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/listClients" />
 
     <AutoCompleteTextView
         android:id="@+id/autoCompleteTextView3"
