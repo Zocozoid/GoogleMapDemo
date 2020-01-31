@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ListView;
 import android.widget.TextView;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -23,6 +24,7 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
 
     Button button;
     GoogleMap map;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +45,10 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
 
+
+
+
+
     }
 
     public void openSecondView(){
@@ -57,6 +63,8 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
         map.addMarker(new MarkerOptions().position(Skopje).title("Skopje"));
         map.moveCamera(CameraUpdateFactory.newLatLng(Skopje));
         map.setMinZoomPreference(10.0f);
+
+
     }
 
 }
